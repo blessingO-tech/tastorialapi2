@@ -22,7 +22,7 @@ export class Reaction extends Model {
     comment!: string | null;
 
 
-    @AllowNull(false)
+    @AllowNull(true)
     @Default(DataType.NOW)
     @Column(DataType.DATE)
     commentedAt!: Date;
